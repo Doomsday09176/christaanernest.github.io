@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toad Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let score = 0;
+        function increaseScore() {
+            score++;
+            document.getElementById('score').innerText = score;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Toad Clicker Game</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Main</a>
+                <a href="Village.html">The Village</a>
+                <a href="about.html">About us</a>
+                <a href="Villains.html">The Villains</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="clicker-game" style="margin-top: 400px ">
+        <button class="button-78" onclick="increaseScore()">Kill Toad</button>
+        <div class="score">Toads Killed: <span id="score">0</span></div>
+    </div>
+<footer>
+        <p>&copy; 2024 Blue Frog Protectors Guild</p>
+    </footer>
+</body>
+</html>
+

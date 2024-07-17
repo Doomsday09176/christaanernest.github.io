@@ -1,0 +1,329 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-size:16px;
+}
+img,
+iframe {
+max-width: 100%;
+height: auto;
+/* so that aspect ratio is kept even if height is declared in markup */ 
+border: 0;
+/* this stops a border if the image is inside a link */
+}
+background
+/* This is a CSS comment.
+Always comment your work to explain what you're doing */ 
+body {
+font-family: arial, sans-serif;
+}
+
+/*
+background color defaults
+Note that HTML and CSS use American spelling (color not colour). */
+body {
+      background-color: orange;
+     }
+header {
+       background-color: #4682b4;
+       }
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+               text-align: center;
+               }
+
+/* TYPOGRAPHY*/
+h1 {
+	font-family: "Orbitron", sans-serif;
+    font-size:40px;
+    color: #fff; /* white */
+    text-transform: uppercase;
+   } 
+h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+   }
+h1,h2,p,li {
+            padding-bottom: 1em; 
+           }
+
+
+.item {
+       background-color: lightblue;
+       padding:1%;
+       margin:1%; 
+       margin-bottom: 20px; 
+       margin-top: 20px; 
+	
+       border-radius:10px;
+}
+
+
+.board {
+    background-color: ghostwhite;
+    width: 850px;
+	height: 825px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    border-radius:10px;
+		
+}
+
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto; 
+      }
+
+/* let's talk about nesting */ 
+.item li {
+          margin-left: 25px;
+}
+blockquote {
+text-transform: uppercase; 
+font-style: italic;
+}
+
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+background: forestgreen; 
+color: black;
+padding: 5px; 
+text-decoration: none; 
+border-radius: 5px;
+}
+nav a:hover {
+background: grey;
+}
+body {
+background-color: black;
+background-image: url("Frog guard.jpeg");
+background-repeat: no-repeat; 
+background-size: cover;
+}
+@media screen and (min-width: 500px ) { 
+	body {
+		background-color: #7903B6;
+		font-family: arial; 
+	}
+	/*.item {
+		background-color: blue;
+	} */
+	h2{
+		font-family: 'arial', regular; 
+	}
+@media screen and (min-width: 768px){ 
+body {
+background-color: black; 
+background-image: url("Frog guard.jpeg");
+background-repeat: no-repeat; 
+background-size: cover;
+}
+/*.item {
+width: 31.3%;
+background-color: yellow; float: left;
+}*/
+        footer {
+        color: white;
+        clear: both;
+} 
+}
+.marcus 
+{
+    color:aliceblue;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.myDiv {
+  border: 5px outset white;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.myDiv2 {
+  border: 5px outset Grey;
+  background-color: #000435;
+  text-align: center;
+	color: white;
+	}
+
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, lightblue 0, steelblue 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient( lightblue 0, steelblue 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, darkblue 0%, lightblue 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, lightblue 0, #4682b4 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(lightblue 0, whitesmoke 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
+	}
+.game-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.game-link:hover {
+    background-color: #4169e1;
+}
+
+
+
+
+/* table  experiment */
+  table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+	.clicker-game{
+		margin-left:auto; 
+    margin-right:auto;
+		text-align: center
+		
+	}
+}
